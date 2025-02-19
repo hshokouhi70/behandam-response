@@ -7,24 +7,26 @@ use Illuminate\Contracts\Support\Responsable;
 class BehandamResponse implements Responsable
 {
     private mixed $data = null;
+
     private mixed $links = null;
+
     private mixed $meta = null;
+
     private ?string $message = null;
+
     private ?string $errorMessage = null;
+
     private ?array $errors = null;
+
     private ?string $next = null;
+
     private int $httpCode = 200;
 
     public static function make(): static
     {
-        return new static();
+        return new static;
     }
 
-    /**
-     * @param  array|object  $data
-     *
-     * @return BehandamResponse
-     */
     public static function from(array|object $data = []): BehandamResponse
     {
         $data = is_object($data) ? get_object_vars($data) : $data;
@@ -104,9 +106,6 @@ class BehandamResponse implements Responsable
         );
     }
 
-    /**
-     * @return array
-     */
     public function responseData(): array
     {
         $response = ['data' => $this->data];
