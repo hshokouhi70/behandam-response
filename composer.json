@@ -1,22 +1,22 @@
 {
-    "name": ":vendor_slug/:package_slug",
-    "description": ":package_description",
+    "name": "behandam/response",
+    "description": "A Laravel package to handle response",
     "keywords": [
-        ":vendor_name",
+        "behandam",
         "laravel",
-        ":package_slug"
+        "response"
     ],
-    "homepage": "https://github.com/:vendor_slug/:package_slug",
+    "homepage": "https://github.com/behandam-response",
     "license": "MIT",
     "authors": [
         {
-            "name": ":author_name",
-            "email": "author@domain.com",
+            "name": "Hossein Shokouhi",
+            "email": "hshokouhi70@gmail.com",
             "role": "Developer"
         }
     ],
     "require": {
-        "php": "^8.4",
+        "php": "^8.2",
         "spatie/laravel-package-tools": "^1.16",
         "illuminate/contracts": "^10.0||^11.0"
     },
