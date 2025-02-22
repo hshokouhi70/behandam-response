@@ -11,7 +11,7 @@ class BehandamAnonymousResourceCollection extends AnonymousResourceCollection
     {
         if ($this->preserveAllQueryParameters) {
             $this->resource->appends($request->query());
-        } elseif (!is_null($this->queryParameters)) {
+        } elseif (! is_null($this->queryParameters)) {
             $this->resource->appends($this->queryParameters);
         }
 

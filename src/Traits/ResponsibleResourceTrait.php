@@ -5,6 +5,7 @@ namespace App\Traits;
 trait ResponsibleResourceTrait
 {
     private string $message;
+
     private int $status;
 
     public function message(string $message): static

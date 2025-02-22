@@ -8,6 +8,6 @@ use Illuminate\Http\Resources\Json\JsonResource;
 
 class BaseResource extends JsonResource
 {
-    use ResponsibleResourceTrait;
     use BehandamAnonymousResourceCollectionTrait;
+    use ResponsibleResourceTrait;
 }
